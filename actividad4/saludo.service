@@ -1,0 +1,11 @@
+[Unit]
+Description=Script que imprime un saludo y la fecha actual infinitamente
+
+[Service]
+ExecStart=/usr/local/bin/saludo.sh
+Restart=always
+User=root
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target
